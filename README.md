@@ -1,6 +1,12 @@
 # AI-Powered Recipe Generator
 
 An intelligent recipe generator that uses AI to create recipes based on available ingredients. Users can save their favorite recipes and share them with the community.
+Welcome page
+![565CB733-C781-48AC-A2B1-C1FC730C309F](https://github.com/user-attachments/assets/5332bf42-cb69-4505-875e-b33c5a87734f)
+Recipe Generator page
+![F379415B-B14F-4CCD-9093-B5419B77AEE2](https://github.com/user-attachments/assets/af50f368-3343-4720-990f-fefc6d679689)
+About 
+![D186B3F2-DE05-4BFC-9308-FCAEB09FC365](https://github.com/user-attachments/assets/fca3e372-8084-4abb-9da6-32dc33018860)
 
 ## Features
 
