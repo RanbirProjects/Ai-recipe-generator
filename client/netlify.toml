@@ -1,0 +1,46 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "build"
+  base = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
+  conditions = {Path = ["/*"]}
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[build.environment]
+  NODE_VERSION = "20.12.2"
+  CI = "false"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[dev]
+  command = "npm start"
+  port = 3000
+  targetPort = 3000
+  publish = "build"
+  autoLaunch = true
+
+[functions]
+  directory = "functions"
+  node_bundler = "esbuild"
+
+[context.production.environment]
+  NODE_ENV = "production"
+  REACT_APP_API_URL = "https://your-backend-url.netlify.app/.netlify/functions/api"
+
+[context.deploy-preview.environment]
+  NODE_ENV = "development"
+  REACT_APP_API_URL = "http://localhost:5000"
+
+[context.branch-deploy.environment]
+  NODE_ENV = "development" 
