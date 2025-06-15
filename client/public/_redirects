@@ -1,1 +1,6 @@
-/* /index.html 200 
+/* /index.html 200
+/ /index.html 200
+/index.html /index.html 200
+/recipes /index.html 200
+/favorites /index.html 200
+/community /index.html 200 
