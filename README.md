@@ -1,4 +1,4 @@
-# AI-Powered Recipe Generator
+AI-Powered Recipe Generator
 
 An intelligent recipe generator that uses AI to create recipes based on available ingredients. Users can save their favorite recipes and share them with the community.
 Welcome page
@@ -8,21 +8,21 @@ Recipe Generator page
 About 
 ![D186B3F2-DE05-4BFC-9308-FCAEB09FC365](https://github.com/user-attachments/assets/fca3e372-8084-4abb-9da6-32dc33018860)
 
-## Features
+Features
 
 - AI-powered recipe generation using OpenAI API
 - Save and manage favorite recipes
 - Modern, responsive UI
 - Community recipe sharing
 
-## Tech Stack
+Tech Stack
 
 - Frontend: React
 - Backend: Node.js/Express
 - Database: MongoDB
 - AI: OpenAI API
 
-## Setup Instructions
+ Setup Instructions
 
 1. Clone the repository
 2. Install dependencies:
@@ -44,9 +44,9 @@ About
    npm run dev:full
    ```
 
-## Deployment
+ Deployment
 
-### Backend Deployment (Heroku)
+ Backend Deployment (Heroku)
 
 1. Create a Heroku account and install the Heroku CLI
 2. Login to Heroku:
@@ -70,7 +70,7 @@ About
    git push heroku main
    ```
 
-### Frontend Deployment (Netlify)
+Frontend Deployment (Netlify)
 
 1. Create a Netlify account
 2. Connect your GitHub repository
@@ -80,7 +80,7 @@ About
 4. Add environment variables in Netlify dashboard
 5. Deploy!
 
-## Contributing
+ Contributing
 
 1. Fork the repository
 2. Create your feature branch
