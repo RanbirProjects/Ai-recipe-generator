@@ -1,93 +1,233 @@
-AI-Powered Recipe Generator
+# 🍳 AI-Powered Recipe Generator
 
-An intelligent recipe generator that uses AI to create recipes based on available ingredients. Users can save their favorite recipes and share them with the community.
-Welcome page
-![565CB733-C781-48AC-A2B1-C1FC730C309F](https://github.com/user-attachments/assets/5332bf42-cb69-4505-875e-b33c5a87734f)
-Recipe Generator page
-![F379415B-B14F-4CCD-9093-B5419B77AEE2](https://github.com/user-attachments/assets/af50f368-3343-4720-990f-fefc6d679689)
-About 
-![D186B3F2-DE05-4BFC-9308-FCAEB09FC365](https://github.com/user-attachments/assets/fca3e372-8084-4abb-9da6-32dc33018860)
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=F75C7E&center=true&vCenter=true&width=700&lines=AI+Recipe+Generator;Generate+Recipes+Using+AI;MERN+Stack+Project;React+Node+MongoDB+OpenAI" />
+</p>
 
-Features
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=RanbirProjects&label=Repository%20Views&color=blue&style=for-the-badge" />
+</p>
 
-- AI-powered recipe generation using OpenAI API
-- Save and manage favorite recipes
-- Modern, responsive UI
-- Community recipe sharing
+<p align="center">
+<img src="https://skillicons.dev/icons?i=react,nodejs,express,mongodb,js,html,css,git,github,vscode" />
+</p>
 
-Tech Stack
+---
 
-- Frontend: React
-- Backend: Node.js/Express
-- Database: MongoDB
-- AI: OpenAI API
+# 🚀 Project Overview
 
- Setup Instructions
+**AI-Powered Recipe Generator** is an intelligent web application that generates recipes based on the ingredients available with the user.
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   cd client
-   npm install
-   ```
+Users can instantly generate AI-powered recipes, save their favorite dishes, and share them with the community.
 
-3. Create a `.env` file in the root directory with the following variables:
-   ```
-   MONGODB_URI=your_mongodb_uri
-   OPENAI_API_KEY=your_openai_api_key
-   PORT=5000
-   ```
+The project is built using the **MERN Stack (MongoDB, Express.js, React, Node.js)** and integrates the **OpenAI API** for smart recipe generation.
 
-4. Start the development server:
-   ```bash
-   npm run dev:full
-   ```
+---
 
- Deployment
+# 🧠 Project Architecture
 
- Backend Deployment (Heroku)
+```mermaid
+flowchart LR
 
-1. Create a Heroku account and install the Heroku CLI
-2. Login to Heroku:
-   ```bash
-   heroku login
-   ```
-3. Create a new Heroku app:
-   ```bash
-   heroku create your-app-name
-   ```
-4. Add MongoDB add-on:
-   ```bash
-   heroku addons:create mongolab
-   ```
-5. Set environment variables:
-   ```bash
-   heroku config:set OPENAI_API_KEY=your_openai_api_key
-   ```
-6. Deploy:
-   ```bash
-   git push heroku main
-   ```
+User[User Browser] --> React[React Frontend]
 
-Frontend Deployment (Netlify)
+React --> API[Node.js / Express Server]
 
-1. Create a Netlify account
-2. Connect your GitHub repository
-3. Set build settings:
-   - Build command: `cd client && npm run build`
-   - Publish directory: `client/build`
-4. Add environment variables in Netlify dashboard
-5. Deploy!
+API --> OpenAI[OpenAI API]
+API --> DB[(MongoDB Database)]
 
- Contributing
+OpenAI --> API
+DB --> API
 
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
+API --> React
+React --> User
+```
 
-## License
+---
 
-MIT 
+# ✨ Features
+
+- 🤖 AI-powered recipe generation using OpenAI
+- 🥗 Generate recipes based on available ingredients
+- ⭐ Save and manage favorite recipes
+- 🌍 Community recipe sharing
+- 📱 Fully responsive modern UI
+- ⚡ Fast backend API with Node.js
+- 🗄️ MongoDB database integration
+
+---
+
+# 📸 Application Screenshots
+
+## 🏠 Welcome Page
+
+<img src="https://github.com/user-attachments/assets/5332bf42-cb69-4505-875e-b33c5a87734f" width="900"/>
+
+---
+
+## 🍲 Recipe Generator Page
+
+<img src="https://github.com/user-attachments/assets/af50f368-3343-4720-990f-fefc6d679689" width="900"/>
+
+---
+
+## ℹ️ About Page
+
+<img src="https://github.com/user-attachments/assets/fca3e372-8084-4abb-9da6-32dc33018860" width="900"/>
+
+---
+
+# 🏗️ Tech Stack
+
+### Frontend
+- React.js  
+- CSS / Tailwind CSS  
+- Axios  
+
+### Backend
+- Node.js  
+- Express.js  
+
+### Database
+- MongoDB  
+
+### AI Integration
+- OpenAI API  
+
+---
+
+# 📂 Project Structure
+
+```
+AI-Recipe-Generator
+│
+├── client
+│   ├── components
+│   ├── pages
+│   ├── App.js
+│   └── package.json
+│
+├── server
+│   ├── routes
+│   ├── controllers
+│   ├── models
+│   └── index.js
+│
+├── .env
+└── README.md
+```
+
+---
+
+# ⚙️ Installation & Setup
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/ai-recipe-generator.git
+cd ai-recipe-generator
+```
+
+---
+
+## 2️⃣ Install Dependencies
+
+```bash
+npm install
+cd client
+npm install
+```
+
+---
+
+## 3️⃣ Create `.env` File
+
+```
+MONGODB_URI=your_mongodb_uri
+OPENAI_API_KEY=your_openai_api_key
+PORT=5000
+```
+
+---
+
+## 4️⃣ Run the Application
+
+```bash
+npm run dev:full
+```
+
+Server will run at:
+
+```
+http://localhost:5000
+```
+
+---
+
+# 🚀 Deployment
+
+## Backend Deployment (Heroku / Render)
+
+```bash
+heroku login
+heroku create your-app-name
+git push heroku main
+```
+
+Set environment variables:
+
+```
+MONGODB_URI
+OPENAI_API_KEY
+```
+
+---
+
+## Frontend Deployment (Netlify)
+
+**Build Command**
+
+```
+cd client && npm run build
+```
+
+**Publish Directory**
+
+```
+client/build
+```
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository  
+2. Create a new branch  
+3. Commit your changes  
+4. Push to GitHub  
+5. Open a Pull Request  
+
+---
+
+# 👨‍💻 Author
+
+**Ranbir Singh**
+
+💼 MERN Stack Developer  
+📍 Bangalore, India  
+
+📧 ranbirsingh9156@gmail.com  
+
+🔗 GitHub  
+https://github.com/RanbirProjects  
+
+🔗 LinkedIn  
+https://linkedin.com/in/ranbirsingh14  
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
